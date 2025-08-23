@@ -252,6 +252,7 @@ h6 {
   margin: 0;
   font-weight: 500;
   color: var(--contrast-color);
+  /* white-space: nowrap; */
 }
 
 .header .btn-getstarted,
@@ -298,6 +299,24 @@ h6 {
 
   .header .navmenu {
     order: 3;
+  }
+}
+
+@media (max-width: 992px) {
+  .header .logo h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .logo h1 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .logo h1 {
+    font-size: 14px;
   }
 }
 

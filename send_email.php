@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.hostinger.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'info@nilavelidivingandsnorkelingtours.com';
+        $mail->Username = 'info@mirissaturtlevillagesnorkelinganddivingcenter.com';
         $mail->Password = 'nilaweliDiving@123';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;     
@@ -36,9 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ];
 
         // Email sender and recipients
-        $mail->setFrom('info@nilavelidivingandsnorkelingtours.com', 'Nilaveli Diving');
+        $mail->setFrom('info@mirissaturtlevillagesnorkelinganddivingcenter.com', 'Nilaveli Diving');
         $mail->addAddress('Thasheenkavindra@gmail.com');
-        $mail->addAddress('info@nilavelidivingandsnorkelingtours.com');
+        $mail->addAddress('info@mirissaturtlevillagesnorkelinganddivingcenter.com');
         $mail->addReplyTo($email, $name);
 
         // Email subject

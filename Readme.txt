@@ -1,3 +1,3 @@
 
-Nilaveli Diving & Snorkeling Tours
-nilavelidivingandsnorkelingtours.com
+Mirissa Turtle Village Snorkeling & Diving Center
+mirissaturtlevillagesnorkelinganddivingcenter.com
