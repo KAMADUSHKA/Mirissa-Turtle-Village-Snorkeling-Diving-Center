@@ -1011,6 +1011,14 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about {
+  background-color: #f5f9ff; /* light blue shade (you can change to any color) */
+  padding: 20px 10px; /* adds spacing top & bottom */
+  margin: 20px 20px;
+  border-radius: 20px;
+ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 .img-fluid {
   border-radius: 15px; 
   position:relative;
