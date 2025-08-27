@@ -1,3 +1,3 @@
 
 Mirissa Turtle Village Snorkeling & Diving Center
-mirissaturtlevillagesnorkelinganddivingcenter.com
+mirissaturtlevillagesnorkelingdivingcenter.com
