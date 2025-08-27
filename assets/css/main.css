@@ -1327,19 +1327,16 @@ section,
 }
 
 
-@media (max-width: 1365px) {
-  .services .service-item:active,
-  .services .service-item:focus {
+@media (min-width: 1365px) {
+  .services .service-item:hover {
     transform: translateY(-10px);
     border-color: var(--accent-color);
   }
 
-  .services .service-item:active h3,
-  .services .service-item:focus h3 {
+  .services .service-item:hover h3 {
     color: var(--accent-color);
   }
 }
-
 
 /*--------------------------------------------------------------
 # Portfolio Section
