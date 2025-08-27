@@ -1253,7 +1253,7 @@ section,
 --------------------------------------------------------------*/
 .services .service-item {
   background-color: var(--surface-color);
-  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.273);
   /* padding: 60px 30px; */
   transition: all ease-in-out 0.3s;
   border-radius: 18px;
@@ -1317,17 +1317,29 @@ section,
   border-radius: 50px;
   transition: 0.5s;
 }
+.services .Service_btn:hover,
+.services .Service_btn:focus {
+  color: #fff; /* text color on hover */
+  background: rgb(147, 147, 0); /* background fill */
+  border-color: rgb(147, 147, 0); /* keep same border */
+  box-shadow: 0px 5px 15px rgba(147, 147, 0, 0.5); /* optional glow */
+  transition: 0.3s ease-in-out;
+}
 
-@media (min-width: 1365px) {
-  .services .service-item:hover {
+
+@media (max-width: 1365px) {
+  .services .service-item:active,
+  .services .service-item:focus {
     transform: translateY(-10px);
     border-color: var(--accent-color);
   }
 
-  .services .service-item:hover h3 {
+  .services .service-item:active h3,
+  .services .service-item:focus h3 {
     color: var(--accent-color);
   }
 }
+
 
 /*--------------------------------------------------------------
 # Portfolio Section
