@@ -1769,6 +1769,15 @@ section,
   color: #ddd;
 }
 
+@media (max-width : 450px) {
+  .contact .info-item p {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #ddd;
+  }
+}
+
 .contact .info-item:hover i {
   background: var(--accent-color);
   color: var(--contrast-color);
