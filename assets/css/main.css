@@ -908,15 +908,19 @@ section,
 --------------------------------------------------------------*/
 
 
+/* Hero Section Base Styles */
 .hero {
   width: 100%;
-  min-height: 75vh;
+  min-height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  padding: 0 20px;
 }
 
+/* Each Swiper Slide */
 .hero .swiper-slide {
   position: relative;
   width: 100%;
@@ -924,10 +928,9 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
-/* Background video styling */
+/* Background Video Styling */
 .background-video {
   position: absolute;
   top: 0;
@@ -936,65 +939,141 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 0;
+  filter: brightness(85%) contrast(105%);
+  transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-/* Dark overlay */
+/* Video Zoom-in Effect on Hover */
+.hero:hover .background-video {
+  transform: scale(1.05);
+  filter: brightness(80%) contrast(110%);
+}
+
+/* Dark Gradient Overlay */
 .hero .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* Makes text more visible */
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.4)
+  );
   z-index: 1;
 }
 
-/* Positioning the content above the video */
+/* Content Layer */
 .hero .row {
   position: relative;
   z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  padding: 20px;
 }
 
+/* Hero Heading */
 .hero h2 {
-  color: white;
-  font-size: 48px;
-  font-weight: 700;
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+  margin-bottom: 15px;
+  animation: fadeInDown 1.2s ease-in-out;
 }
 
+/* Hero Subtext */
 .hero p {
-  color: white;
-  font-size: 24px;
+  color: #f5f5f5;
+  font-size: 22px;
+  font-weight: 400;
   margin-top: 10px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  animation: fadeInUp 1.5s ease-in-out;
 }
 
-/* Call-to-action button */
+/* Call-to-action Button */
 .hero .btn-get-started {
-  color: white;
-  font-weight: 400;
+  display: inline-block;
+  color: #fff;
+  background: #007d34;
+  padding: 12px 35px;
   font-size: 18px;
-  padding: 10px 30px;
+  font-weight: 600;
   border-radius: 50px;
-  transition: 0.5s;
-  border: 1px solid white;
-  background: #004f03;
-  z-index: 2;
+  transition: all 0.4s ease-in-out;
+  border: 2px solid #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .hero .btn-get-started:hover {
-  background: #EFE2B5;
-  color: black;
+  background: #efe2b5;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(239, 226, 181, 0.6);
 }
 
-/* Mobile responsive styles */
+/* Keyframe Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero h2 {
+    font-size: 44px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero h2 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .hero p {
     font-size: 18px;
   }
+
+  .hero .btn-get-started {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
 }
 
+@media (max-width: 480px) {
+  .hero {
+    min-height: 90vh;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Clients Section
