@@ -650,13 +650,14 @@ border-radius: 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 20px;
   /* color: color-mix(in srgb, var(--default-color), transparent 50%); */
+  background-color: #73b3a2db;
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .social-links a:hover {
   border-color: var(--accent-color);
-  background-color: #73b3a2db;
+  background-color: #9db373db;
 }
 
 .tiktok i { color: #000; }
